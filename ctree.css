@@ -1,0 +1,245 @@
+body{
+  margin: 0;
+  background-image: url('../img/neve.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: trocar 20s 20s cubic-bezier(.70, .85, .64, .70) infinite alternate;
+}
+
+@keyframes trocar{
+  to{
+    background-image: url('../img/l-natal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+  }
+}
+
+main{
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5px;
+  width: 35ch;
+}
+
+main div{
+  width: 4.3px;
+  height: 4.3px;
+  border: 1px solid green;
+  border-radius: 50%;
+  background-color: green;
+}
+
+#quadragesimos{
+  width: 6px;
+  height: 6px;
+  /*animation: girar 1s 1.2s cubic-bezier(.75, .10, .10, .75) infinite;
+  */
+}
+
+@keyframes girar{
+  from{transform: translateY(0);}
+  to{transform: translateY(-10px);}
+}
+
+#setimo{
+  background-color: darkgoldenrod;
+  width: 15px;
+  height: 25px;
+  border: 1px solid darkgoldenrod;
+  margin-top: -3.9px;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes pisca1{
+  to{
+    background-color: white;
+    border-color: white;
+  }
+}
+
+@keyframes pisca2{
+  to{
+    background-color: yellow;
+    border-color: yellow;
+  }
+}
+
+@keyframes pisca3{
+  to{
+    background-color: red;
+    border-color: red;
+  }
+}
+
+/* BRANCO */
+#quadragesimop div{
+  animation: pisca1 500ms 500ms linear infinite alternate;
+}
+
+#trigesimoo div{
+  animation: pisca1 1.1s 1.1s linear infinite alternate;
+}
+
+#trigesimoq1 div{
+  animation: pisca1 1.4s 1.4s linear infinite alternate;
+}
+
+#trigesimos div{
+  animation: pisca1 1.6s 1.6s linear infinite alternate;
+}
+
+#vigesimon div{
+  animation: pisca1 1.9s 1.9s linear infinite alternate;
+}
+
+#vigesimos1 div{
+  animation: pisca2 2.2s 2.2s linear infinite alternate;
+}
+
+#vigesimoq div{
+  animation: pisca1 2.5s 2.5s linear infinite alternate;
+}
+
+#decimon div{
+  animation: pisca1 2.7s 2.7s linear infinite alternate;
+}
+
+#decimos1 div{
+  animation: pisca1 3s 3s linear infinite alternate;
+}
+
+#decimot div{
+  animation: pisca1 3.3s 3.3s linear infinite alternate;
+}
+
+#decimo div{
+  animation: pisca1 3.6s 3.6s linear infinite alternate;
+}
+
+/* AMARELO */
+#quadragesimo div{
+  animation: pisca2 900ms 900ms linear infinite alternate;
+}
+
+#trigesimos2 div{
+  animation: pisca2 1.2s 1.2s linear infinite alternate;
+}
+
+#trigesimoq div{
+  animation: pisca2 1.5s 1.5s linear infinite alternate;
+}
+
+#trigesimop div{
+  animation: pisca2 1.7s 1.7s linear infinite alternate;
+}
+
+#vigesimoo div{
+  animation: pisca2 2s 2s linear infinite alternate;
+}
+
+#vigesimot div{
+  animation: pisca2 2.3s 2.3s linear infinite alternate;
+}
+
+#vigesimop div{
+  animation: pisca2 2.6s 2.6s linear infinite alternate;
+}
+
+#decimoo div{
+  animation: pisca2 2.8s 2.8s linear infinite alternate;
+}
+
+#decimoq1 div{
+  animation: pisca2 3.1s 3.1s linear infinite alternate;
+}
+
+#decimos div{
+  animation: pisca2 3.4s 3.4s linear infinite alternate;
+}
+
+/* VERMELHO */
+#trigesimon div{
+  animation: pisca3 1s 1s linear infinite alternate;
+}
+
+#trigesimos1 div{
+  animation: pisca3 1.3s 1.3s linear infinite alternate;
+}
+
+#trigesimot div{ 
+  animation: pisca3 1.6s 1.6s linear infinite alternate;
+}
+
+#trigesimo div{ 
+  animation: pisca3 1.8s 1.8s linear infinite alternate;
+}
+
+#vigesimos2 div{ 
+  animation: pisca3 2.1s 2.1s linear infinite alternate;
+}
+
+#vigesimoq1 div{ 
+  animation: pisca3 2.4s 2.4s linear infinite alternate;
+}
+
+#vigesimos div{
+  animation: pisca3 2.5s 2.5s linear infinite alternate;
+}
+
+#vigesimo div{
+  animation: pisca3 2.6s 2.6s linear infinite alternate;
+}
+
+#decimos2 div{
+  animation: pisca3 2.9s 2.9s linear infinite alternate;
+}
+
+#decimoq div{
+  animation: pisca3 3.2s 3.2s linear infinite alternate;
+}
+
+#decimop div{
+  animation: pisca3 3.5s 3.5s linear infinite alternate;
+}
+
+audio{
+  max-width: 100px;
+  height: 60px;
+  margin-left: 1px;
+  margin-top: -26px;
+  padding: 0;
+}
+
+#natal1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 23px;
+  margin-left: 2px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-family: serif;
+  font-size: 12pt;
+  color: gray;
+  animation: c-mudar 20s 20s linear infinite alternate;
+}
+
+@keyframes c-mudar{
+  to{color: white;}
+}
+
+figure .aper{font-size: 10pt;}
+
+figure .ind{
+  border: .1px solid white;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12pt;
+}
